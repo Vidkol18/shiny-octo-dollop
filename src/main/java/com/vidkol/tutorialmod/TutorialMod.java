@@ -1,6 +1,7 @@
 package com.vidkol.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import com.vidkol.tutorialmod.item.ModCreativeModeTabs;
 import com.vidkol.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
@@ -26,6 +27,7 @@ public class TutorialMod {
 
     public TutorialMod(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
+        ModCreativeModeTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
