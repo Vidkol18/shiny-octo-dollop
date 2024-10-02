@@ -26,10 +26,18 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> BLACK_OPAL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("black_opal_blocks_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tutorialmod.black_opal_blocks_tab"))
+            .icon(() -> new ItemStack(ModBlocks.BLACK_OPAL_BLOCK.get()))
             .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "black_opal_items_tab"))
             .displayItems((pParameters, pOutput) -> {
+                //blocks
                 pOutput.accept(ModBlocks.BLACK_OPAL_BLOCK);
                 pOutput.accept(ModBlocks.RAW_BLACK_OPAL_BLOCK);
+
+                //ores
+                pOutput.accept(ModBlocks.RAW_BLACK_OPAL_ORE);
+                pOutput.accept(ModBlocks.RAW_BLACK_OPAL_DEEPSLATE_ORE);
+                pOutput.accept(ModBlocks.RAW_BLACK_OPAL_NETHER_ORE);
+                pOutput.accept(ModBlocks.RAW_BLACK_OPAL_END_ORE);
             })
             .build());
 
