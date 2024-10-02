@@ -2,5 +2,7 @@
   "itemGroup.tutorialmod.black_opal_items_tab": "Black Opal Items",
   "itemGroup.tutorialmod.black_opal_blocks_tab": "Black Opal Blocks",
   "item.tutorialmod.black_opal": "Black Opal",
-  "item.tutorialmod.raw_black_opal": "Raw Black Opal"
+  "item.tutorialmod.raw_black_opal": "Raw Black Opal",
+  "block.tutorialmod.black_opal_block": "Black Opal Block",
+  "block.tutorialmod.raw_black_opal_block": "Raw Black Opal Block"
 }

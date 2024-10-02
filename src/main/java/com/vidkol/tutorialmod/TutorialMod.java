@@ -1,6 +1,7 @@
 package com.vidkol.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import com.vidkol.tutorialmod.block.ModBlocks;
 import com.vidkol.tutorialmod.item.ModCreativeModeTabs;
 import com.vidkol.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class TutorialMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
