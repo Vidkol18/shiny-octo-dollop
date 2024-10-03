@@ -3,10 +3,12 @@
   "itemGroup.tutorialmod.black_opal_blocks_tab": "Black Opal Blocks",
   "item.tutorialmod.black_opal": "Black Opal",
   "item.tutorialmod.raw_black_opal": "Raw Black Opal",
+  "item.tutorialmod.chainsaw": "Chainsaw",
   "block.tutorialmod.black_opal_block": "Black Opal Block",
   "block.tutorialmod.raw_black_opal_block": "Raw Black Opal Block",
   "block.tutorialmod.black_opal_ore": "Black Opal Ore",
   "block.tutorialmod.black_opal_deepslate_ore": "Black Opal Deepslate Ore",
   "block.tutorialmod.black_opal_nether_ore": "Black Opal Nether Ore",
-  "block.tutorialmod.black_opal_end_ore": "Black Opal End Ore"
+  "block.tutorialmod.black_opal_end_ore": "Black Opal End Ore",
+  "block.tutorialmod.magic_block": "Magic Block"
 }

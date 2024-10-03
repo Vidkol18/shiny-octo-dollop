@@ -21,6 +21,9 @@ public class ModCreativeModeTabs {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.BLACK_OPAL.get());
                 pOutput.accept(ModItems.RAW_BLACK_OPAL.get());
+
+                // --[Items [Tools]]--
+                pOutput.accept(ModItems.CHAINSAW.get());
             })
             .build());
 
@@ -38,6 +41,9 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModBlocks.RAW_BLACK_OPAL_DEEPSLATE_ORE);
                 pOutput.accept(ModBlocks.RAW_BLACK_OPAL_NETHER_ORE);
                 pOutput.accept(ModBlocks.RAW_BLACK_OPAL_END_ORE);
+
+                // --[Blocks [Custom Advanced block]]--
+                pOutput.accept(ModBlocks.MAGIC_BLOCK);
             })
             .build());
 

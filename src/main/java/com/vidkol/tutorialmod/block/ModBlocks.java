@@ -1,6 +1,7 @@
 package com.vidkol.tutorialmod.block;
 
 import com.vidkol.tutorialmod.TutorialMod;
+import com.vidkol.tutorialmod.block.custom.MagicBlock;
 import com.vidkol.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -17,7 +18,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TutorialMod.MOD_ID);
 
-    // --[Blocks]--
+    // --[Blocks [Generic]]--
     public static final DeferredBlock<Block> BLACK_OPAL_BLOCK = registerBlock("black_opal_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops())
     );
@@ -26,7 +27,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops())
     );
 
-    // --[Ore blocks (exp)]--
+    // --[Blocks [Ores]]--
     public static final DeferredBlock<Block> RAW_BLACK_OPAL_ORE = registerBlock("black_opal_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 5), BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops())
     );
@@ -38,6 +39,11 @@ public class ModBlocks {
     );
     public static final DeferredBlock<Block> RAW_BLACK_OPAL_END_ORE = registerBlock("black_opal_end_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 5), BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops())
+    );
+
+    // --[Blocks [Custom Advanced block]]--
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops())
     );
 
 
