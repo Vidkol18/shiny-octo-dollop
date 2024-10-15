@@ -19,11 +19,16 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("itemGroup.tutorialmod.black_opal_items_tab"))
             .icon(() -> new ItemStack(ModItems.BLACK_OPAL.get()))
             .displayItems((pParameters, pOutput) -> {
+                // --[Items [Mats]]--
                 pOutput.accept(ModItems.BLACK_OPAL.get());
                 pOutput.accept(ModItems.RAW_BLACK_OPAL.get());
 
                 // --[Items [Tools]]--
                 pOutput.accept(ModItems.CHAINSAW.get());
+
+                // --[Items [Food | Drink]]--
+                pOutput.accept(ModItems.TOMATO.get());
+                pOutput.accept(ModItems.TOMATO_JUICE.get());
             })
             .build());
 
