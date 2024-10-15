@@ -9,13 +9,13 @@ public class ModFoodProperties {
     public static final FoodProperties TOMATO = new FoodProperties.Builder()
             .nutrition(3)
             .saturationModifier(0.25f)
-            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST), 0.65f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 600), 0.65f)
             .build();
 
     public static final FoodProperties TOMATO_JUICE = new FoodProperties.Builder()
             .nutrition(4)
             .saturationModifier(0.25f)
-            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST), 0.65f)
-            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION), 0.7f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 600), 0.65f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 300), 0.7f)
             .build();
 }
